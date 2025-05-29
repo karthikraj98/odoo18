@@ -1,7 +1,7 @@
 #!/bin/bash
 
 CURRENT_IP=$(hostname -I | awk '{print $1}')
-CONFIG_FILE="/path/to/hosts.csv"
+CONFIG_FILE="/var/lib/jenkins/workspace/job2/hosts.csv"
 
 IFS=, # set delimiter
 tail -n +2 "$CONFIG_FILE" | while read ip db user; do
