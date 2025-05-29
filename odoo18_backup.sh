@@ -16,3 +16,6 @@ pg_dump -U "$DB_USER" -p 5432 -U odoo18 -h 127.0.0.1 -Fc -v -f "$BACKUP_FILE" "$
 # Optional: Delete backups older than 7 days
 find "$BACKUP_DIR" -type f -name "${DB_NAME}_*.sql" -mtime +7 -exec rm {} \;
 
+sudo /var/lib/jenkins/workspace/job2
+sudo chmod +x odoo18_backup.sh 
+sudo ./odoo18_backup.sh
