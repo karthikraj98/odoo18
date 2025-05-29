@@ -1,2 +1,2 @@
-host_ip,db_name,db_user
-127.0.0.1,odoo18,odoo18
+ip,db,user
+192.168.168.180,odoo18,odoo18
